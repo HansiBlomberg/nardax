@@ -4,17 +4,24 @@ namespace Nardax
 {
     public static class DateTimeExtensions
     {
+
+        // Lorem ipsum jajajaja
+
         public static DateTime Floor(this DateTime dateTime, TimeSpan timeSpan)
         {
             var ticks = dateTime.Ticks / timeSpan.Ticks;
             return new DateTime(ticks * timeSpan.Ticks);
         }
 
+        // Kommenterar bara för att leka med git
+
         public static DateTime Round(this DateTime dateTime, TimeSpan timeSpan)
         {
             var ticks = (dateTime.Ticks + (timeSpan.Ticks / 2) + 1) / timeSpan.Ticks;
             return new DateTime(ticks * timeSpan.Ticks);
         }
+
+        // Osv osv osv
 
         public static DateTime Ceiling(this DateTime dateTime, TimeSpan timeSpan)
         {
