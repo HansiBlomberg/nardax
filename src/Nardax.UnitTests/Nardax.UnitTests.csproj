@@ -53,6 +53,7 @@
     <Compile Include="AsseblyExtensionsTests.cs" />
     <Compile Include="DateTimeExtensionsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueueExtensionsTests.cs" />
     <Compile Include="Serialization\BinarySerializerTests.cs" />
     <Compile Include="Serialization\XmlSerializerTests.cs" />
     <Compile Include="TruncateStringExtensionsTests.cs" />
