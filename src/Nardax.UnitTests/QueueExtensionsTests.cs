@@ -37,5 +37,8 @@ namespace Nardax.Tests
             Assert.AreEqual("ee", _queue.Dequeue());
 
         }
+
+
+        public void going-bananas[eerrladkfjkasfj]
     }
 }
