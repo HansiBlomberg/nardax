@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Nardax;
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Nardax.Tests
@@ -20,7 +21,7 @@ namespace Nardax.Tests
             var expected = "9";
 
             var result = _value.TruncateLeft(1);
-            
+
             Assert.AreEqual(expected, result);
         }
 
@@ -34,6 +35,13 @@ namespace Nardax.Tests
             Assert.AreEqual(expected, result);
         }
 
-        
+        [TestMethod()]
+        public void RemoveWhiteSpaceTest()
+        {
+            var testString = "i\twill \tsurvive\t";
+            var result = testString.RemoveWhiteSpace();
+            var expected = "iwillsurvive";
+            Assert.AreEqual(expected, result);
+        }
     }
 }

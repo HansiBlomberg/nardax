@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Text.RegularExpressions;
 
 namespace Nardax
 {
@@ -25,6 +26,11 @@ namespace Nardax
             }
 
             return value.Substring(0, maxLength);
+        }
+
+        public static string RemoveWhiteSpace(this string value)
+        {
+            return Regex.Replace(value, "\\s", "");
         }
     }
 }
