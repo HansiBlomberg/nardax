@@ -1,10 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
-<<<<<<< HEAD
 using System.Text;
-=======
 using System.Text.RegularExpressions;
->>>>>>> 06ea28bbd70daa4eb8931d841d721e1707a8ad33
 
 namespace Nardax
 {
@@ -42,6 +39,7 @@ namespace Nardax
                 sb.Append(value);
             }
             return sb.ToString();
+        }
 
 
         public static string RemoveWhiteSpace(this string value)

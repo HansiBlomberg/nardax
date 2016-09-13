@@ -42,6 +42,7 @@ namespace Nardax.Tests
             var result = "käbbel".RepeatMe(3);
             var expected = "käbbelkäbbelkäbbel";
             Assert.AreEqual(result, expected);
+        }
 
         public void RemoveWhiteSpaceTest()
         {
