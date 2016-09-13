@@ -45,6 +45,14 @@ namespace Nardax.Tests
         }
 
         [TestMethod()]
+        public void RepeatMe_DefaultValueTest()
+        {
+            var result = "NyanCat".RepeatMe();
+            var expected = "NyanCatNyanCatNyanCatNyanCatNyanCat";
+            Assert.AreEqual(result, expected);
+        }
+
+        [TestMethod()]
         public void RemoveWhiteSpaceTest()
         {
             var testString = "i\twill \tsurvive\t";
