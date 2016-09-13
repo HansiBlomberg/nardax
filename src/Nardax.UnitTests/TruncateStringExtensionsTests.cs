@@ -44,6 +44,7 @@ namespace Nardax.Tests
             Assert.AreEqual(result, expected);
         }
 
+        [TestMethod()]
         public void RemoveWhiteSpaceTest()
         {
             var testString = "i\twill \tsurvive\t";
